@@ -18,6 +18,11 @@ export const Default = {
       state: "TASK_INBOX",
     },
   },
+  render: (args) => (
+    <ul>
+      <Task {...args} />
+    </ul>
+  ),
 };
 
 export const Pinned = {
@@ -28,6 +33,11 @@ export const Pinned = {
       state: "TASK_PINNED",
     },
   },
+  render: (args) => (
+    <ul>
+      <Task {...args} />
+    </ul>
+  ),
 };
 
 export const Archived = {
@@ -38,6 +48,11 @@ export const Archived = {
       state: "TASK_ARCHIVED",
     },
   },
+  render: (args) => (
+    <ul>
+      <Task {...args} />
+    </ul>
+  ),
 };
 
 const longTitleString = `This task's name is absurdly large. In fact, I think if I keep going I might end up with content overflow. What will happen? The star that represents a pinned task could have text overlapping. The text could cut-off abruptly when it reaches the star. I hope not!`;
@@ -50,4 +65,9 @@ export const LongTitle = {
       state: "TASK_INBOX",
     },
   },
+  render: (args) => (
+    <ul>
+      <Task {...args} />
+    </ul>
+  ),
 };
